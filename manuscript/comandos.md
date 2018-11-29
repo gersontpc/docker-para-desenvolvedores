@@ -4,6 +4,18 @@ Para utilização do Docker é necessário conhecer alguns comandos e entender d
 
 Não abordaremos os comandos de criação de imagem e tratamento de problemas (troubleshooting) no Docker, pois têm capítulos específicos para o detalhamento.
 
+Para executar os comandos do Docker no GNU/Linux, é necessário inicializar o serviço/daemon do Docker, iremos utilizar o systemd que já foi adotado na maioria das novas distribuições.
+
+```
+systemctl start docker 
+```
+
+Para ativar na inicialização do Sistema Operacional, execute o comando abaixo:
+
+```
+systemctl enable docker
+```
+
 ## Executando um container
 
 Para iniciar um container é necessário saber a partir de qual imagem será executado. Para listar as imagens que seu **Docker host** tem localmente, execute o comando abaixo:
